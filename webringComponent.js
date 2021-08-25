@@ -4,30 +4,22 @@ const template = document.createElement("template");
 template.innerHTML = `
 <style>
 .webring {
-  border: 15px solid #222;
-  border-top-color: #666;
-  border-left-color: #666;
   padding: 1rem; 
-
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
-  grid-gap: 1rem;
-
   text-align: center;
-
   font: 100% system-ui, sans-serif;
 }
 .icon {
   font-size: 100px;
 }
+a {
+    color: #2b2b2b
+}
 </style>
 
 <div class="webring">
-  <div class="icon">🤜</div>
   <div id="copy">
     
   </div>
-  <div class="icon">🤛</div>
 </div>`;
 
 class WebRing extends HTMLElement {
@@ -55,16 +47,11 @@ class WebRing extends HTMLElement {
 
         const randomSiteIndex = this.getRandomInt(0, sites.length - 1);
 
-        const cp = `
-          <h1>The Great CSS Webring</h1>
+        const cp = `       
           <p>
-            This <a href="${matchedSite.url}">${matchedSite.name}</a> site is owned by ${matchedSite.owner}
-          </p>
-          
-          <p>
-            <a href="${sites[prevSiteIndex].url}">[Prev]</a>
-            <a href="${sites[nextSiteIndex].url}">[Next]</a>
-            <a href="${sites[randomSiteIndex].url}">[Random]</a>
+            <a href="${sites[prevSiteIndex].url}">Prev</a>
+            <a href="${sites[nextSiteIndex].url}">Next</a>
+            <a href="${sites[randomSiteIndex].url}">Random</a>
           </p>
         `;
 
