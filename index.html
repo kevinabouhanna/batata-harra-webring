@@ -6,15 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batata Harra Webring</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- components -->
-    <script src="webringComponent.js" type="text/javascript" defer></script>
+    <script src="components/webringComponent.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-    <h1 class="batata-harra-title">Batata Harra Webring</h1>
-    <webring-css site="https://gabykaram.com">
-    </webring-css>
+    <div class="container">
+        <h1 class="batata-harra-title">
+            <span class="batata-harra-title-container">Batata Harra
+                <picture class="flame">
+                    <source srcset="images/flame.gif" media="(min-width: 800px)">
+                    <img src="images/flame.gif" alt="Flame" />
+                </picture>
+            </span>
+        </h1>
+        <webring-css site="https://gabykaram.com">
+        </webring-css>
+    </div>
 </body>
 
 </html>

@@ -12,7 +12,12 @@ template.innerHTML = `
   font-size: 100px;
 }
 a {
-    color: #2b2b2b
+    color: #bf8348;
+    padding: 0 4px
+}
+a:hover {
+    color: #ffda56;
+    transition: .3s
 }
 </style>
 
