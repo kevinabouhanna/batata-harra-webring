@@ -2,7 +2,7 @@
 
 :root {
     --background-color: #2b2b2b;
-    --color: #ededed;
+    --color: #e3d8c2;
     --accent: #bf8348;
     --accent-light: #feb522;
     --accent-bg: #bb7c6a40;
@@ -17,7 +17,6 @@ html {
 
 ::selection {
     background: var(--accent-bg);
-    /* WebKit/Blink Browsers */
 }
 
 :focus {
@@ -97,6 +96,7 @@ figcaption {
 
 .batata-harra-title {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 50px 30px 0 30px;
 }
@@ -111,7 +111,7 @@ figcaption {
     width: 100%;
 }
 
-.batata-harra-title-container {
+.batata-harra-title-text {
     position: relative;
     font-size: 1.25em;
     font-weight: 400;
@@ -123,7 +123,16 @@ figcaption {
     font-style: italic;
 }
 
-.batata-harra-title-container img {
+.batata-harra-title-text-secondary {
+    color: var(--color);
+    font-size: 1.85em;
+    font-weight: 400;
+    letter-spacing: -2px;
+    font-style: italic;
+    line-height: 36px;
+}
+
+.batata-harra-title-text img {
     max-width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -231,16 +240,20 @@ figcaption {
 
 /* Featured Batata Harra */
 .featured-batata-harra-container {
-
+    display: flex;
+    width: calc(100% - 8em);
+    padding: 2em 4em;
 }
 
 .featured-batata-harra-item {
     padding: 6px;
     border-radius: 4px;
     background-color: var(--accent-bg);
+    margin: 12px;
 }
 
 .featured-batata-harra-item img {
-    width: 200px;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 4px;
 }
