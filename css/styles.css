@@ -8,6 +8,7 @@
     --accent-bg: #bb7c6a40;
     --focus: #e9a9a4;
     --font: 1.2rem/1.53 'Luckiest Guy', cursive;
+    --secondary-font: 100% system-ui, sans-serif;
 }
 
 html {
@@ -74,11 +75,6 @@ a {
     text-decoration: unset;
 }
 
-figcaption {
-    color: var(--accent-light);
-    font-size: 1.15em;
-}
-
 .webring-css {
     display: block;
     max-width: 600px;
@@ -117,7 +113,7 @@ figcaption {
     font-weight: 400;
     letter-spacing: -2px;
     position: relative;
-    animation: flame 0.8s infinite;
+    animation: flame 10s infinite;
     white-space: nowrap;
     position: relative;
     font-style: italic;
@@ -152,7 +148,7 @@ figcaption {
     }
 
     10% {
-        color: #ff8b44;
+        color: #ffda56;
     }
 
     20% {
@@ -168,7 +164,7 @@ figcaption {
     }
 
     50% {
-        color: #ffda56;
+        color: #ff9c54;
     }
 
     60% {
@@ -180,7 +176,7 @@ figcaption {
     }
 
     80% {
-        color: #ffda56;
+        color: #ff8b44;
     }
 
     90% {
@@ -194,27 +190,27 @@ figcaption {
 
 @keyframes flame {
     0% {
-        color: #bf8348;
+        color: #ffda56;
     }
 
     10% {
-        color: #ff8b44;
+        color: #ffda56;
     }
 
     20% {
-        color: #ff9c54;
+        color: #ffda56;
     }
 
     30% {
-        color: #fea813;
+        color: #ffda56;
     }
 
     40% {
-        color: #feb522;
+        color: #ffda56;
     }
 
     50% {
-        color: #ffda56;
+        color: #feb522;
     }
 
     60% {
@@ -222,7 +218,7 @@ figcaption {
     }
 
     70% {
-        color: #ffda56;
+        color: #fea813;
     }
 
     80% {
@@ -230,11 +226,11 @@ figcaption {
     }
 
     90% {
-        color: #ffda56;
+        color: #ff8b44;
     }
 
     100% {
-        color: #ffda56;
+        color: #bf8348;
     }
 }
 
@@ -252,8 +248,22 @@ figcaption {
     margin: 12px;
 }
 
+.feat__batataHarra__card>figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
 .feat__batataHarra__card img {
     max-width: 200px;
     max-height: 200px;
     border-radius: 4px;
+}
+
+.feat__batataHarra__member {
+    color: var(--accent-light);
+    font-size: 1.15em;
+}
+
+.feat__batataHarra__title {
+    font: var(--secondary-font);
 }
