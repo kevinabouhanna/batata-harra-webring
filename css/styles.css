@@ -81,13 +81,13 @@ a {
     margin: 1rem auto;
 }
 
-.container {
+.batataHarra__title__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
     align-items: center;
+    width: 99vw;
+    margin-top: 10em;
 }
 
 .batataHarra__title {
@@ -235,17 +235,12 @@ a {
 }
 
 /* Featured Batata Harra */
-.feat__batataHarra__container {
-    display: flex;
-    width: calc(100% - 6em);
-    padding: 1em 3em;
-}
-
 .feat__batataHarra__card {
     padding: 6px;
     border-radius: 4px;
     background-color: var(--accent-bg);
     margin: 12px;
+    width: fit-content;
 }
 
 .feat__batataHarra__card>figcaption {
