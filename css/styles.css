@@ -86,7 +86,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 99vw;
+    width: calc(100vw - 10px);
     margin-top: 10em;
 }
 
