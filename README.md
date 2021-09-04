@@ -13,6 +13,6 @@ Here are the instructions on how to join our awesome webring:
 1. Clone this repo and add webringComponent.js to your project.
 2. Add our webring component in the footer of your website `<webring-css site="https://gabykaram.com"></webring-css>`; 
 And don't forget to import it in your `<head>` tag `<script src="components/webringComponent.js" type="text/javascript" defer></script>` 
-3. Create a pull request to manifest.json with your own configuration.
+3. Create a pull request to webring.json with your own configuration.
 
 Hurray! you're now a proud Batata Harra member 😎
