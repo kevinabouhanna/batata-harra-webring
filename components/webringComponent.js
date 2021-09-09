@@ -34,15 +34,28 @@ class WebRing extends HTMLElement {
 
     // e.g. https://batataharra.com
     const thisSite = this.getAttribute("site");
+    const current_url = window.location.href;
+    let current_domain = new URL(current_url).hostname
+      .replace("www.", "")
+      .replace("/", "");
+
+    // current_domain = domain.hostname;
 
     fetch(DATA_FOR_WEBRING)
       .then((response) => response.json())
       .then((sites) => {
         // Find the current site in the data
-        const matchedSiteIndex = sites.findIndex(
-          (site) => site.url === thisSite
-        );
-        const matchedSite = sites[matchedSiteIndex];
+        const matchedSiteIndex = sites
+          .filter((site) => {
+            console.log(site);
+            const site_url = site.url;
+            let site_url_domain = new URL(site_url).hostname
+              .replace("www.", "")
+              .replace("/", "");
+
+            return !(site_url_domain === current_domain);
+          })
+          .findIndex((site) => site.url === thisSite);
 
         let prevSiteIndex = matchedSiteIndex - 1;
         if (prevSiteIndex === -1) prevSiteIndex = sites.length - 1;
