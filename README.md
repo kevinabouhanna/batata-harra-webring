@@ -1,4 +1,6 @@
 # 🥔 Batata Harra Webring 🥔
+Batata Harra members are strong belivers of the Learn by teaching concepts.
+Our aim is to help to continuously lift each other up and spread knowledge.
 
 ## What's a Webring?
 A webring is an element on the website that:
