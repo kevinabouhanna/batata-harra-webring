@@ -1,5 +1,5 @@
 # 🥔 Batata Harra Webring 🥔
-Batata Harra members are strong belivers of the Learn by teaching concepts.
+Batata Harra members are strong believers of the learn by teaching concepts.
 Our aim is to help to continuously lift each other up and spread knowledge.
 
 ## What's a Webring?
