@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/batata-harra-webring/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/batata-harra-webring/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/batata-harra-webring/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/batata-harra-webring/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/batata-harra-webring/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/batata-harra-webring/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Batata Harra Webring</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/utils.css" />
     <!-- components -->
-    <script src="components/webringComponent.js" type="text/javascript" defer></script>
-</head>
+    <script
+      src="components/webringComponent.js"
+      type="text/javascript"
+      defer
+    ></script>
+  </head>
 
-<body>
+  <body>
     <div class="batataHarra__title__container">
-        <h1 class="batataHarra__title">
-            <span class="batataHarra__title__text">Batata Harra
-                <picture class="flame">
-                    <source srcset="images/flame.gif" media="(min-width: 800px)">
-                    <img src="images/flame.gif" alt="Flame" />
-                </picture>
-            </span>
-            <span class="batataHarra__title__text--secondary">Webring</span>
+      <h1 class="batataHarra__title">
+        <span class="batataHarra__title__text"
+          >Batata Harra
+          <picture class="flame">
+            <source srcset="images/flame.gif" media="(min-width: 800px)" />
+            <img src="images/flame.gif" alt="Flame" />
+          </picture>
+        </span>
+        <span class="batataHarra__title__text--secondary">Webring</span>
+      </h1>
+    </div>
+    <webring-css site="https://gabykaram.com"> </webring-css>
+    <div class="container">
+      <div class="row">
+        <h1 class="col-12 batataHarra__title__text--secondary">
+          <span class="bh-pl-1">Members</span>
         </h1>
-    </div>
-    <webring-css site="https://gabykaram.com">
-    </webring-css>
-    <div class="container">
-        <div class="row">
-            <h1 class="col-12 batataHarra__title__text--secondary">
-                <span class="bh-pl-1">Members</span>
-            </h1>
-        </div>
+      </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-12-sm col-3">
+      <div class="container__grid row">
+        <div class="col-12-sm col-3 flex-center">
                 <figure class="feat__batataHarra__card">
                     <a href="https://gabykaram.com">
                         <img src="images/members/gaby.png" alt="Gaby Karam">
@@ -67,7 +85,7 @@
                 </figure>
             </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
