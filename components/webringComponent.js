@@ -49,7 +49,7 @@ class WebRing extends HTMLElement {
           .filter((site) => {
             console.log(site);
             const site_url = site.url;
-            let site_url_domain = new URL(site_url).hostname
+            const site_url_domain = new URL(site_url).hostname
               .replace("www.", "")
               .replace("/", "");
 
@@ -57,13 +57,10 @@ class WebRing extends HTMLElement {
           })
           .findIndex((site) => site.url === thisSite);
 
-        let prevSiteIndex = matchedSiteIndex - 1;
-        if (prevSiteIndex === -1) prevSiteIndex = sites.length - 1;
-
-        let nextSiteIndex = matchedSiteIndex + 1;
-        if (nextSiteIndex > sites.length) nextSiteIndex = 0;
-
-        let randomSiteIndex = this.getRandomInt(0, sites.length - 1);
+        // TODO: Need a rewrite to be more readable
+        const prevSiteIndex = matchedSiteIndex === 0 ? sites.length - 1 : matchedSiteIndex - 1;
+        const nextSiteIndex = matchedSiteIndex > sites.length -1 ? 0 : matchedSiteIndex + 1;
+        const randomSiteIndex = this.getRandomInt(0, sites.length - 1);
 
         const cp = `       
           <p>
