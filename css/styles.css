@@ -259,6 +259,8 @@ a {
   max-height: 200px;
   border-radius: 4px;
   aspect-ratio: 16/15;
+  border-radius: 4px;
+  width: 100%;
 }
 
 .feat__batataHarra__member {
