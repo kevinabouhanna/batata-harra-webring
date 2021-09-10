@@ -78,6 +78,8 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, 250px);
   place-content: center;
+  row-gap: 1.3rem;
+  padding-top: 1rem;
 }
 
 .webring-css {
@@ -256,6 +258,7 @@ a {
   max-width: 200px;
   max-height: 200px;
   border-radius: 4px;
+  aspect-ratio: 16/15;
 }
 
 .feat__batataHarra__member {
