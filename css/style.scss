@@ -6,8 +6,10 @@ $accent: #bf8348;
 $accent-light: #feb522;
 $accent-bg: #bb7c6a40;
 $focus: #e9a9a4;
-$font: 1.2rem/1.53 "Luckiest Guy", cursive;
-$secondary-font: 100% system-ui, sans-serif;
+$font: 1.2rem/1.53 "Luckiest Guy",
+cursive;
+$secondary-font: 100% system-ui,
+sans-serif;
 $thumbBG: #bfbfbf;
 
 :root {
@@ -66,6 +68,7 @@ body {
       font-style: italic;
       line-height: 36px;
     }
+
     &__flame__container {
       width: 100%;
 
