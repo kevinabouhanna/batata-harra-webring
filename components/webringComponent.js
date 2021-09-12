@@ -4,12 +4,19 @@ const template = document.createElement("template");
 template.innerHTML = `
 <style>
 .webring {
-  padding: 1rem; 
   text-align: center;
   font: 100% system-ui, sans-serif;
 }
 .icon {
   font-size: 100px;
+}
+p{
+  margin-block-start:0;
+  margin-block-end:0;
+  display:flex;
+  flex-direction:row;
+  gap: 0.5rem;
+  
 }
 a {
     color: #bf8348;
