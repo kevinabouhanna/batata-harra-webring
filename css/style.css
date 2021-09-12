@@ -12,16 +12,16 @@ body {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [8];
-  grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
   -ms-grid-rows: 16rem 5rem 5rem 1fr;
-  grid-template-rows: 16rem 5rem 5rem 1fr;
+      grid-template-rows: 16rem 5rem 5rem 1fr;
   row-gap: 0.5rem;
   min-height: 100vh;
   height: 100%;
   font: 1.2rem/1.53 "Luckiest Guy", cursive;
   -webkit-font-feature-settings: "case", "calt", "tnum", "ss01", "zero";
-  font-feature-settings: "case", "calt", "tnum", "ss01", "zero";
+          font-feature-settings: "case", "calt", "tnum", "ss01", "zero";
   text-rendering: optimizeLegibility;
   color: #e3d8c2;
   scrollbar-color: #bfbfbf;
@@ -34,8 +34,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 
 .flame__container__text {
@@ -44,15 +44,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -62,7 +62,7 @@ body {
   font-weight: 400;
   letter-spacing: -2px;
   -webkit-animation: flame 10s infinite;
-  animation: flame 10s infinite;
+          animation: flame 10s infinite;
   font-style: italic;
   z-index: 1;
   line-height: 40px;
@@ -84,7 +84,7 @@ body {
 .flame__container__text__flame__container img {
   position: absolute;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   right: 50%;
   left: 50%;
   top: 30px;
@@ -101,11 +101,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .member__container {
@@ -118,8 +118,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card__container {
@@ -130,11 +130,11 @@ body {
   grid-row: 4;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(13.5rem, 14.4rem)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(13.5rem, 14.4rem));
+  -ms-grid-columns: (minmax(13.5rem, 14.4rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(13.5rem, 14.4rem));
   place-content: center;
   -webkit-column-gap: 1em;
-  column-gap: 1em;
+          column-gap: 1em;
   row-gap: 1.5em;
   padding-bottom: 1rem;
 }
@@ -165,13 +165,13 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card__container__figure__figcaption__member {
   color: #feb522;
-  font-size: 1.15em;
+  font-size: 1.25em;
 }
 
 .card__container__figure__figcaption__title {
