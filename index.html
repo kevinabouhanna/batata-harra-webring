@@ -24,67 +24,94 @@
     <link rel="manifest" href="/site.webmanifest" />
     <title>Batata Harra Webring</title>
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <!-- components -->
     <script
       src="components/webringComponent.js"
       type="text/javascript"
       defer
     ></script>
+    <title>Batata Harra Webring</title>
   </head>
 
   <body>
-    <div class="batataHarra__title__container">
-      <h1 class="batataHarra__title">
-        <span class="batataHarra__title__text"
-          >Batata Harra
-          <picture class="flame">
-            <source srcset="images/flame.gif" media="(min-width: 800px)" />
-            <img src="images/flame.gif" alt="Flame" />
-          </picture>
-        </span>
-        <span class="batataHarra__title__text--secondary">Webring</span>
-      </h1>
-    </div>
-    <webring-css site="https://gabykaram.com"> </webring-css>
-    <div class="container">
-      <div class="row">
-        <h1 class="col-12 batataHarra__title__text--secondary">
-          <span class="bh-pl-1">Members</span>
+    <div class="wrapper">
+      <!-- Flame with the title and sub-title section -->
+
+      <div class="flame__container">
+        <picture class="flame__container__text__flame__container">
+          <source srcset="images/flame.gif" media="(min-width: 800px)" />
+          <img src="images/flame.gif" alt="Flame" />
+        </picture>
+        <h1 class="flame__container__text">
+          <span class="flame__container__text__span--flame">Batata Harra </span>
+          <span class="flame__container__text__span">Webring</span>
         </h1>
       </div>
-    </div>
-    <div class="container">
-      <div class="container__grid row">
-        <div class="col-12-sm col-3 flex-center">
-                <figure class="feat__batataHarra__card">
-                    <a href="https://gabykaram.com">
-                        <img src="images/members/gaby.png" alt="Gaby Karam">
-                    </a>
-                    <figcaption><span class="feat__batataHarra__member">Gaby Karam</span><span
-                            class="feat__batataHarra__title">Best Mentor</span></figcaption>
-                </figure>
-            </div>
-            <div class="col-12-sm col-3 flex-center">
-                <figure class="feat__batataHarra__card">
-                    <a href="https://abouhanna.com">
-                        <img src="images/members/kevin.png" alt="Kevin Abou Hanna">
-                    </a>
-                    <figcaption><span class="feat__batataHarra__member">Kevin Abou Hanna</span><span
-                            class="feat__batataHarra__title">Mad Designer</span></figcaption>
-                </figure>
-            </div>
-            <div class="col-12-sm col-3 flex-center">
-                <figure class="feat__batataHarra__card">
-                    <a href="https://antoinedebes.codes">
-                        <img src="images/members/antoine.png" alt="Antoine Debes">
-                    </a>
-                    <figcaption><span class="feat__batataHarra__member">Antoine Debes</span><span
-                            class="feat__batataHarra__title">CSS Guru</span></figcaption>
-                </figure>
-            </div>
+      <!-- Webring buttons section -->
+
+      <webring-css
+        site="https://gabykaram.com"
+        class="webring-css__btns--normal"
+      >
+      </webring-css>
+      <!-- Card title -->
+
+      <div class="member__container">
+        <div class="row">
+          <h1 class="batataHarra__title__text--secondary">
+            <span class="bh-pl-1">Members</span>
+          </h1>
         </div>
+      </div>
+      <!-- Card section -->
+
+      <div class="card__container">
+        <a href="https://gabykaram.com">
+          <figure class="card__container__figure">
+            <div class="card__container__figure__img__container">
+              <img src="images/members/gaby.png" alt="Gaby Karam" />
+            </div>
+            <figcaption class="card__container__figure__figcaption">
+              <span class="card__container__figure__figcaption__member"
+                >Gaby Karam</span
+              ><span class="card__container__figure__figcaption__title"
+                >Best Mentor</span
+              >
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://abouhanna.com">
+          <figure class="card__container__figure">
+            <div class="card__container__figure__img__container">
+              <img src="images/members/kevin.png" alt="Kevin Abou Hanna" />
+            </div>
+            <figcaption class="card__container__figure__figcaption">
+              <span class="card__container__figure__figcaption__member"
+                >Kevin Abou Hanna</span
+              ><span class="card__container__figure__figcaption__title"
+                >Mad Designer</span
+              >
+            </figcaption>
+          </figure>
+        </a>
+        <a href="https://antoinedebes.codes">
+          <figure class="card__container__figure">
+            <div class="card__container__figure__img__container">
+              <img src="images/members/antoine.png" alt="Antoine Debes" />
+            </div>
+            <div class="test">
+              <figcaption class="card__container__figure__figcaption">
+                <span class="card__container__figure__figcaption__member"
+                  >Antoine Debes</span
+                ><span class="card__container__figure__figcaption__title"
+                  >CSS Guru</span
+                >
+              </figcaption>
+            </div>
+          </figure>
+        </a>
       </div>
     </div>
   </body>
