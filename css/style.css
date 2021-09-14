@@ -18,9 +18,9 @@ p {
   display: grid;
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
-  -ms-grid-rows: 16rem 2rem 2rem 1fr;
-      grid-template-rows: 16rem 2rem 2rem 1fr;
-  row-gap: 0.5rem;
+  -ms-grid-rows: 16rem 2rem 10rem 1fr;
+      grid-template-rows: 16rem 2rem 10rem 1fr;
+  row-gap: 1.5rem;
   min-height: 100vh;
   height: 100%;
   font: 1.2rem/1.53 "Luckiest Guy", cursive;
@@ -116,8 +116,8 @@ p {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-column: 2/8;
-  -ms-grid-row: 4;
-  grid-row: 4;
+  -ms-grid-row: 3;
+  grid-row: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,8 +130,8 @@ p {
   -ms-grid-column: 2;
   -ms-grid-column-span: 6;
   grid-column: 2/8;
-  -ms-grid-row: 5;
-  grid-row: 5;
+  -ms-grid-row: 4;
+  grid-row: 4;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(13.5rem, 14.4rem))[auto-fit];
@@ -140,10 +140,11 @@ p {
   -webkit-column-gap: 1em;
           column-gap: 1em;
   row-gap: 1.5em;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .card__container__figure {
+  width: 225px;
   height: 100%;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -180,6 +181,10 @@ p {
 
 .card__container__figure__figcaption__title {
   font: 100% system-ui, sans-serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 @media (min-width: 960px) {
