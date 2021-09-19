@@ -5,68 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="/batata-harra-webring/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/batata-harra-webring/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/batata-harra-webring/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>Batata Harra Webring</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <!-- components -->
     <script src="components/webringComponent.js" type="text/javascript" defer></script>
     <script src="components/memberCardComponent.js" type="text/javascript" defer></script>
-</head>
+    <script
+      src="components/webringComponent.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <title>Batata Harra Webring</title>
+  </head>
 
-<body>
-    <div class="batataHarra__title__container">
-        <h1 class="batataHarra__title">
-            <span class="batataHarra__title__text">Batata Harra
-                <picture class="flame">
-                    <source srcset="images/flame.gif" media="(min-width: 800px)">
-                    <img src="images/flame.gif" alt="Flame" />
-                </picture>
-            </span>
-            <span class="batataHarra__title__text--secondary">Webring</span>
+  <body>
+    <div class="wrapper">
+      <!-- Flame with the title and sub-title section -->
+
+      <div class="flame__container">
+        <picture class="flame__container__text__flame__container">
+          <source srcset="images/flame.gif" media="(min-width: 800px)" />
+          <img src="images/flame.gif" alt="Flame" />
+        </picture>
+        <h1 class="flame__container__text">
+          <span class="flame__container__text__span--flame">Batata Harra </span>
+          <span class="flame__container__text__span">Webring</span>
         </h1>
-    </div>
-    <webring-css site="https://gabykaram.com">
-    </webring-css>
-    <div class="container">
-        <div class="row">
-            <h1 class="col-12 batataHarra__title__text--secondary">
-                <span class="bh-pl-1">Members</span>
-            </h1>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12-sm col-3">
-                <member-card portfolio-url="https://gabykaram.com"
-                             member-image-src="images/members/gaby.png"
-                             member-name="Gaby Karam"
-                             member-role="Best Mentor"></member-card>
+      </div>
+      <!-- Webring buttons section -->
 
-            </div>
-            <div class="col-12-sm col-3">
-                <member-card portfolio-url="https://abouhanna.com"
-                             member-image-src="images/members/kevin.png"
-                             member-name="Kevin Abou Hanna"
-                             member-role="Mad Designer"></member-card>
-            </div>
-            <div class="col-12-sm col-3">
-                <member-card portfolio-url="https://kaklan.cf"
-                             member-image-src="images/members/jiro.png"
-                             member-name="Jiro Achkarian"
-                             member-role="Crazy Artist"></member-card>
-            </div>
-            <div class="col-12-sm col-3">
-                <member-card portfolio-url="https://antoinedebes.codes"
-                             member-image-src="images/members/antoine.png"
-                             member-name="Antoine Debes"
-                             member-role="CSS Guru"></member-card>
-            </div>
-        </div>
-    </div>
-</body>
+      <webring-css
+        site="https://gabykaram.com"
+        class="webring-css__btns--normal"
+      >
+      </webring-css>
+      <!-- Card title -->
 
+      <div class="member__container">
+        <div class="row">
+          <h1 class="batataHarra__title__text--secondary">
+            <span class="bh-pl-1">Members</span>
+          </h1>
+          <p>Batata Harra members are strong believers of the learn by teaching concepts. Our aim is to help to continuously lift each other up and spread knowledge.</p>
+        </div>
+      </div>
+      <!-- Card section -->
+
+      <div class="card__container">
+          <member-card portfolio-url="https://gabykaram.com"
+                       member-image-src="images/members/gaby.png"
+                       member-name="Gaby Karam"
+                       member-role="Best Mentor"></member-card>
+          <member-card portfolio-url="https://abouhanna.com"
+                       member-image-src="images/members/kevin.png"
+                       member-name="Kevin Abou Hanna"
+                       member-role="Mad Designer"></member-card>
+          <member-card portfolio-url="https://antoinedebes.codes"
+                       member-image-src="images/members/antoine.png"
+                       member-name="Antoine Debes"
+                       member-role="CSS Guru"></member-card>
+      </div>
+    </div>
+  </body>
 </html>

@@ -16,41 +16,50 @@ class MemberCard extends HTMLElement {
     <style>
     /* Featured Batata Harra */
     .feat__batataHarra__card {
-        padding: 6px;
-        border-radius: 4px;
-        background-color: var(--accent-bg);
-        margin: 12px;
-        width: fit-content;
+      padding: 6px;
+      border-radius: 4px;
+      background-color: var(--accent-bg);
+      width: fit-content;
     }
     
-    .feat__batataHarra__card>figcaption {
-        display: flex;
-        flex-direction: column;
+    .feat__batataHarra__card > figcaption {
+      display: flex;
+      flex-direction: column;
     }
     
     .feat__batataHarra__card img {
-        max-width: 200px;
-        max-height: 200px;
-        border-radius: 4px;
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: 4px;
+      aspect-ratio: 1/1;
+      border-radius: 4px;
+      width: 100%;
     }
     
     .feat__batataHarra__member {
-        color: var(--accent-light);
-        font-size: 1.15em;
+      color: var(--accent-light);
+      font-size: 1.15em;
     }
     
     .feat__batataHarra__title {
-        font: var(--secondary-font);
+      font: var(--secondary-font);
     }
     </style>
     
-    <figure class="feat__batataHarra__card">
-      <a href="${memberUrl}">
-          <img src="${memberImageSrc}" alt="${memberName}">
-      </a>
-      <figcaption><span class="feat__batataHarra__member">${memberName}</span><span
-              class="feat__batataHarra__title">${memberRole}</span></figcaption>
-    </figure>`
+    <a href="${memberUrl}">
+      <figure class="card__container__figure">
+        <div class="card__container__figure__img__container">
+          <img src="${memberImageSrc}" alt="${memberName}" />
+        </div>
+        <figcaption class="card__container__figure__figcaption">
+          <span class="card__container__figure__figcaption__member"
+            >${memberName}</span
+          ><span class="card__container__figure__figcaption__title"
+            >${memberRole}</span
+          >
+        </figcaption>
+      </figure>
+    </a>`
   }
 }
 

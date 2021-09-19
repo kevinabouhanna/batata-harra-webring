@@ -4,12 +4,19 @@ const template = document.createElement("template");
 template.innerHTML = `
 <style>
 .webring {
-  padding: 1rem; 
   text-align: center;
   font: 100% system-ui, sans-serif;
 }
 .icon {
   font-size: 100px;
+}
+p{
+  margin-block-start:0;
+  margin-block-end:0;
+  display:flex;
+  flex-direction:row;
+  gap: 0.5rem;
+  
 }
 a {
     color: #bf8348;
@@ -35,7 +42,7 @@ class WebRing extends HTMLElement {
     // e.g. https://batataharra.com
     const thisSite = this.getAttribute("site");
     const current_url = window.location.href;
-    let current_domain = new URL(current_url).hostname
+    const current_domain = new URL(current_url).hostname
       .replace("www.", "")
       .replace("/", "");
 
@@ -49,7 +56,7 @@ class WebRing extends HTMLElement {
           .filter((site) => {
             console.log(site);
             const site_url = site.url;
-            let site_url_domain = new URL(site_url).hostname
+            const site_url_domain = new URL(site_url).hostname
               .replace("www.", "")
               .replace("/", "");
 
@@ -57,12 +64,9 @@ class WebRing extends HTMLElement {
           })
           .findIndex((site) => site.url === thisSite);
 
-        let prevSiteIndex = matchedSiteIndex - 1;
-        if (prevSiteIndex === -1) prevSiteIndex = sites.length - 1;
-
-        let nextSiteIndex = matchedSiteIndex + 1;
-        if (nextSiteIndex > sites.length) nextSiteIndex = 0;
-
+        // TODO: Need a rewrite to be more readable
+        const prevSiteIndex = matchedSiteIndex === 0 ? sites.length - 1 : matchedSiteIndex - 1;
+        const nextSiteIndex = matchedSiteIndex > sites.length -1 ? 0 : matchedSiteIndex + 1;
         const randomSiteIndex = this.getRandomInt(0, sites.length - 1);
 
         const cp = `       
