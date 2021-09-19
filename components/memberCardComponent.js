@@ -15,34 +15,71 @@ class MemberCard extends HTMLElement {
     return `
     <style>
     /* Featured Batata Harra */
-    .feat__batataHarra__card {
-      padding: 6px;
-      border-radius: 4px;
-      background-color: var(--accent-bg);
-      width: fit-content;
+    a {
+      background-color: transparent;
+      color: inherit;
+      text-decoration: none;
     }
     
-    .feat__batataHarra__card > figcaption {
+    img {
+      border-style: none;
+    }
+    
+    figure {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+    }
+    
+    .card__container__figure {
+      width: 225px;
+      height: 100%;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      padding: 6px;
+      background-color: #bb7c6a40;
+      border-radius: 4px;
+    }
+    
+    .card__container__figure__img__container {
+      position: relative;
+    }
+    
+    .card__container__figure__img__container img {
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 4px;
+    }
+    
+    .card__container__figure__figcaption {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
     }
     
-    .feat__batataHarra__card img {
-      max-width: 200px;
-      max-height: 200px;
-      border-radius: 4px;
-      aspect-ratio: 1/1;
-      border-radius: 4px;
-      width: 100%;
-    }
-    
-    .feat__batataHarra__member {
-      color: var(--accent-light);
+    .card__container__figure__figcaption__member {
+      color: #feb522;
       font-size: 1.15em;
     }
     
-    .feat__batataHarra__title {
-      font: var(--secondary-font);
+    .card__container__figure__figcaption__title {
+      font: 100% system-ui, sans-serif;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    @media (min-width: 960px) {
+      .card__container {
+        place-content: start;
+      }
     }
     </style>
     
